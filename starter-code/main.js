@@ -1,13 +1,120 @@
+//**PART 1//
+var ages = [28, 30, 17, 14, 12, 20, 13, 36, 68, 49, 37, 55, 56, 26];
+
+for (var i = 0; i < ages.length; i++) {
+    console.log('ages', ages[i]);
+}
+
+
+
+//PART 2//
+var younger = [];
+for (var i = 0; i < ages.length; i++) {
+    if (ages[i] <= 20) {
+        console.log('ages less than 20', ages[i]);
+        younger.push(ages[i]);
+
+    }
+}
+console.log(younger);
+
+
+
+
+// //PART #3//
+var younger = [17, 14, 12, 20, 13];
+var dos = []
+for (var i = younger.length - 1; i >= 0; i--) {
+    console.log(younger[i]);
+    dos.push(younger[i]);
+}
+console.log(dos);
+
+
+//PART #4//
+var ages = [28, 30, 17, 14, 12, 20, 13, 36, 68, 49, 37, 55, 56, 26];
+while (i < ages.length) {
+
+    console.log(ages[i]);
+    i++;
+}
+
+var ages = [28, 30, 17, 14, 12, 20, 13, 36, 68, 49, 37, 55, 56, 26];
+var younger = [];
+var i = 0;
+while (i <= ages.length) {
+    if (ages[i] <= 20) {
+        younger.push(ages[i]);
+    }
+    i++;
+}
+console.log(younger);
+
+
+
+var younger = [17, 14, 12, 20, 13];
+var dos = [];
+var i = younger.length - 1
+while (i >= 0) {
+    dos.push(younger[i]);
+    console.log(dos);
+
+    i--;
+}
+
+
+var ages = [28, 30, 17, 14, 12, 20, 13, 36, 68, 49, 37, 55, 56, 26];
+
+var younger = [];
+
+var i = ages.length;
+while (i--) {
+    ages.push(younger.length[i]);
+}
+console.log(ages[i]);
+
+//PART #5//
+
+function getDay(number) {
+    switch (number) {
+        case 0:
+            console.log(`sunday`);
+            break;
+        case 1:
+            console.log(`monday`);
+            break;
+        case 2:
+            console.log(`tuesday`);
+            break;
+        case 3:
+            console.log(`wednesday`);
+            break;
+        case 4:
+            console.log(`thursday`);
+            break;
+        case 5:
+            console.log(`friday`);
+            break;
+        case 6:
+            console.log(`saturday`);
+            break;
+        default:
+            console.log(`Please enter a valid day the week`);
+    }
+}
+getDay(1)
+
 /*
 	Part 1: We have an array of people's ages, saved in the variable "ages".
 	Write a for-loop that will print each of the elements to the console.
 */
 
-var ages = [28, 30, 17, 14, 12, 20, 13, 36, 68, 49, 37, 55, 56, 26];
 
 /*
 	Part 2: Let's create a new variable, "younger", which holds an empty array.
-	Using a for-loop, populate the "younger" array with numbers from the "ages"
+ Using a
+ for -loop, popul
+ate the "younger" array with numbers from the "ages"
 	array which are less than or equal to 20.
 
 	Hint: Use the for-loop to go through each element in the "ages" array.
